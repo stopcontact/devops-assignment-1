@@ -14,17 +14,17 @@ class GradeRecords(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, subject_name: str=None, grade: int=None):  # noqa: E501
+    def __init__(self, subject_name: str=None, grade: float=None):  # noqa: E501
         """GradeRecords - a model defined in Swagger
 
         :param subject_name: The subject_name of this GradeRecords.  # noqa: E501
         :type subject_name: str
         :param grade: The grade of this GradeRecords.  # noqa: E501
-        :type grade: int
+        :type grade: float
         """
         self.swagger_types = {
             'subject_name': str,
-            'grade': int
+            'grade': float
         }
 
         self.attribute_map = {
@@ -69,22 +69,22 @@ class GradeRecords(Model):
         self._subject_name = subject_name
 
     @property
-    def grade(self) -> int:
+    def grade(self) -> float:
         """Gets the grade of this GradeRecords.
 
 
         :return: The grade of this GradeRecords.
-        :rtype: int
+        :rtype: float
         """
         return self._grade
 
     @grade.setter
-    def grade(self, grade: int):
+    def grade(self, grade: float):
         """Sets the grade of this GradeRecords.
 
 
         :param grade: The grade of this GradeRecords.
-        :type grade: int
+        :type grade: float
         """
         if grade is None:
             raise ValueError("Invalid value for `grade`, must not be `None`")  # noqa: E501

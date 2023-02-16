@@ -102,7 +102,7 @@ components:
           type: string
         last_name:
           type: string
-        grade_records:
+        gradeRecords:
           type: array
           items:
             $ref: '#/components/schemas/GradeRecords'
@@ -110,7 +110,7 @@ components:
         student_id: 123456
         first_name: Pietje
         last_name: Bell
-        grade_records:
+        gradeRecords:
         - subject_name: maths
           grade: 7
         - subject_name: biology
@@ -125,7 +125,8 @@ components:
         grade:
           maximum: 10
           minimum: 1
-          type: integer
+          type: number
+          format: float
       example:
         subject_name: history
         grade: 7
