@@ -30,9 +30,7 @@ def delete_student(student_id):  # noqa: E501
 
     :rtype: None
     """
-    if isinstance(student_id, float):
-        return delete(student_id)
-    return 500,'error'
+    return delete(student_id)
 
 
 def get_student_by_id(student_id):  # noqa: E501
@@ -45,6 +43,4 @@ def get_student_by_id(student_id):  # noqa: E501
 
     :rtype: Student
     """
-    if isinstance(student_id, float):
-        return get_by_id(student_id)
-    return 500,'error'
+    return get_by_id(student_id)
